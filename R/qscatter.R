@@ -19,7 +19,7 @@ qscatter <- function(data, x, y){
   gsubtitle <- paste("R: ",correlation, ", P value: ", format.pval(p_val, digits=3))
   ggplot(mtcars, aes(x={{x}}, y={{y}}))+
     geom_point()+
-    geom_smooth(method="lm", se=FALSE, linetype="dashed", color="grey")+
+    geom_smooth(method="lm", se=FALSE, linetype="dashed", color="cornflowerblue")+
     theme_minimal()+
     labs(title=gtitle,
          subtitle=gsubtitle)
